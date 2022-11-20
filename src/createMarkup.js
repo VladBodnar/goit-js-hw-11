@@ -10,9 +10,9 @@ export const createMarkur = data => {
         comments,
         downloads,
       }) => {
-        return `<div class="photo-card">
+        return `<div class="gallery__item">
   <a href=${largeImageURL}>
-  <img src=${webformatURL} alt=${tags} loading="lazy"/>
+  <img  class="gallery__image" src=${webformatURL} alt=${tags} loading="lazy"/>
   </a>
   <div class="info">
     <p class="info-item">
